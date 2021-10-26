@@ -31,6 +31,7 @@ namespace OOPCustomer
                             Console.WriteLine(e.Message);
                             Console.ForegroundColor = ConsoleColor.White;
                         }
+                        Console.ReadLine();
                         break;
                     case 2:
                         Console.BackgroundColor = ConsoleColor.DarkRed;
@@ -116,22 +117,14 @@ namespace OOPCustomer
             get { return qty; }
             set
             {
-                try
+                if (value > 1 && value <= 100)
                 {
-                    if (value > 1 && value <= 100)
-                    {
-                        qty = value;
-                    }
-                    else
-                    {
-                        throw new Exception("The quantity must be a positive number not more than 100 pcs.");
-                    }
+                    qty = value;
                 }
-                catch (Exception)
+                else
                 {
-                    
+                    throw new Exception("The quantity must be a positive number not more than 100 pcs.");
                 }
-               
             }
         }
 
@@ -166,7 +159,7 @@ namespace OOPCustomer
                         Name = item[0],
                         Address = item[1],
                         Number = item[2],
-                        Qty = Convert.ToInt32(item[3])
+                        Qty = string.IsNullOrWhiteSpace(item[3]) ? 0 : Convert.ToInt32(item[3])
                     });
                 }
             }
