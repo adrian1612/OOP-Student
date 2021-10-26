@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPNumber", "OOPNumber\OOPNumber.csproj", "{783C93D3-3192-4B9D-BC86-605C4DA1C288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPCustomer", "OOPCustomer\OOPCustomer.csproj", "{F8DF74A5-5071-4D99-8CA9-963A7527E1C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{783C93D3-3192-4B9D-BC86-605C4DA1C288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{783C93D3-3192-4B9D-BC86-605C4DA1C288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{783C93D3-3192-4B9D-BC86-605C4DA1C288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DF74A5-5071-4D99-8CA9-963A7527E1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DF74A5-5071-4D99-8CA9-963A7527E1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DF74A5-5071-4D99-8CA9-963A7527E1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DF74A5-5071-4D99-8CA9-963A7527E1C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
