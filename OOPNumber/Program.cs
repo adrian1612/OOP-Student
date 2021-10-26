@@ -39,9 +39,9 @@ namespace OOPNumber
             Number = num;
         }
 
-        public Numbers(bool encode)
+        public Numbers(bool encode, int num)
         {
-            Console.Write("{0}) Input a number: ", list.Count + 1);
+            Console.Write("{0}) Input a number: ", num);
             Number = Convert.ToInt32(Console.ReadLine());
         }
 
@@ -50,7 +50,7 @@ namespace OOPNumber
             list.Clear();
             for (int i = 0; i < 5; i++)
             {
-                list.Add(new Numbers(true));
+                list.Add(new Numbers(true, i + 1));
             }
         }
 
